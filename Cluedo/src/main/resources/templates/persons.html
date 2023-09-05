@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Personen</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th>Name</th>
+
+                <th>Anrede</th>
+
+                <th>Haarfarbe</th>
+
+                <th>Alter</th>
+
+                <th>Merkmal</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr th:each="person : ${persons}">
+
+                <td th:text="${person.name}"></td>
+
+                <td th:text="${person.anrede}"></td>
+
+                <td th:text="${person.haarfarbe}"></td>
+
+                <td th:text="${person.alter}"></td>
+
+                <td th:text="${person.merkmal}"></td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</body>
+
+</html>

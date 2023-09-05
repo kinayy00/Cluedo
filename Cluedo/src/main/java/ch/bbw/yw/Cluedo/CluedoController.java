@@ -1,4 +1,4 @@
-package ch.bbw.yw.cluedo;
+package ch.bbw.yw.Cluedo;
 
  
 
